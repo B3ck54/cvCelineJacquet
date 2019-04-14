@@ -1,0 +1,89 @@
+/***header***/
+.header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0;
+    height: 70px;
+    line-height: 70px;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color:white;
+    position:fixed;
+    z-index: 999;
+}
+
+.header .header-logo {
+    color:  black;
+    font-family: 'Montserrat';
+    float: left;
+    margin-left: 30px;
+}
+
+.header .header-menu {
+    float: right;
+    margin-right: 30px;
+}
+
+.header .header-menu a {
+    margin-right: 15px;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.header .header-menu a:hover {
+    color: #3c7e8f;
+}
+/***********/
+
+/***banner***/
+.banner {
+    margin-top: -20px;
+}
+
+.banner .banner-image {
+    position:relative;
+}
+
+
+.banner .banner-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 20%;
+}
+
+  /***********/
+
+  
+  
+  
+/***about***/
+.about .about-single-element .icon {
+    font-size: 50px;
+}
+
+.about .about-single-element {
+    text-align: center;
+}
+
+.about .about-single-element p {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#author {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 80%
+}
+
+#cite {
+    text-align: justify;
+    font-style: italic; 
+}
+
+/***********/
+
+
+
+
