@@ -1,7 +1,8 @@
-.text-js banner{
+.text-js banner {
     opacity: 0;
-  }
-  .cursor banner{
+}
+
+.cursor banner {
     display: block;
     position: absolute;
     height: 100%;
@@ -12,37 +13,13 @@
     background-color: black;
     z-index: 1;
     animation: flash 0.5s none infinite alternate;
-  }
-  @keyframes flash{
-    0%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
-  }
-  
+}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

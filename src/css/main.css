@@ -1,4 +1,5 @@
 /***header***/
+
 .header {
     width: 100%;
     margin-left: 0;
@@ -7,13 +8,13 @@
     height: 70px;
     line-height: 70px;
     /* background-color: rgba(0, 0, 0, 0); */
-    background-color:white;
-    position:fixed;
+    background-color: white;
+    position: fixed;
     z-index: 999;
 }
 
 .header .header-logo {
-    color:  black;
+    color: black;
     font-family: 'Montserrat';
     float: left;
     margin-left: 30px;
@@ -33,17 +34,20 @@
 .header .header-menu a:hover {
     color: #3c7e8f;
 }
+
+
 /***********/
 
+
 /***banner***/
+
 .banner {
     margin-top: -20px;
 }
 
 .banner .banner-image {
-    position:relative;
+    position: relative;
 }
-
 
 .banner .banner-content {
     position: absolute;
@@ -52,12 +56,12 @@
     top: 20%;
 }
 
-  /***********/
 
-  
-  
-  
+/***********/
+
+
 /***about***/
+
 .about .about-single-element .icon {
     font-size: 50px;
 }
@@ -79,11 +83,8 @@
 
 #cite {
     text-align: justify;
-    font-style: italic; 
+    font-style: italic;
 }
 
+
 /***********/
-
-
-
-
