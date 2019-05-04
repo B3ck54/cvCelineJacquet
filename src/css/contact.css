@@ -1,0 +1,18 @@
+/***footer***/
+
+.footer .footer-informations {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer .footer-informations ul {
+    padding: 0;
+}
+
+.footer .footer-informations ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+/***********/

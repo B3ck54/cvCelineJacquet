@@ -1,0 +1,28 @@
+/***modal***/
+
+.own-modal {
+    padding-top: 120px;
+}
+
+
+/**********/
+
+
+/***modal form***/
+
+.footer-informations {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.modal-informations ul {
+    padding: 0;
+}
+
+.modal-informations ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+/***********/

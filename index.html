@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="src/css/sectionParcours.css">
     <link rel="stylesheet" href="src/css/titleAnimate.css">
     <link rel="stylesheet" href="src/css/portFolio.css">
-
-
+    <link rel="stylesheet" href="src/css/contact.css">
+    <link rel="stylesheet" href="src/css/modalContactezMoi.css">
     <!----- stylesheet ----->
 
     <!----- fonts ----->
@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!----- fonts ----->
+
+    <!----- meta SEO ----->
+    <meta name="description" content="La description de mon site ! PRIMORDIAL : mettre des bons mots clés !">
+    <meta name="keywords" content="webdesign, webdeveloppeur, developpeur front-end">
+    <!----- meta SEO ----->
 
 </head>
 <!----- head ----->
@@ -71,11 +76,76 @@
                         <h1 class="text-js title">CV Céline JACQUET</h1>
                     </div>
                     <h2 class="subtitle">Conceptrice Développeuse d'applications</h2>
-                    <button class="button is-link">Contactez-moi</button>
+                    <button class="button is-link" id="open_modal">Contactez-moi</button>
                 </div>
             </div>
         </div>
         <!----- banner ----->
+
+        <!------ modal ------->
+
+        <div class="modal own-modal" id="modal_to_open">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Contact</p>
+                    <button class="delete" aria-label="close" id="close_modal"></button>
+                </header>
+                <section class="modal-card-body">
+                    <form class="form">
+                        <div class="field">
+                            <label class="label">Nom</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="e.g Alex Smith">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Prénom</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="e.g Alex Smith">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="e.g Alex Smith">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <div class="footer-informations">
+                        <p>54000 Nancy</p>
+                        <p>06 71 95 79 16</p>
+                        <p>celine.jacquet54@free.fr</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-github-square"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-link">Save changes</button>
+                </footer>
+            </div>
+        </div>
+        <!------ modal ------->
 
         <!----- section a propos ----->
 
@@ -120,7 +190,7 @@
                 <section id="competences">
                     <div class="container">
                         <div class="title">
-                            <h2>Expérience</h2>
+                            <h2>EXPERIENCE</h2>
                         </div>
 
                         <hr>
@@ -134,7 +204,7 @@
                                         </div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading">
-                                                <h4>Covivo</h4>
+                                                <h4>Mobicoop</h4>
                                                 <h4 class="subheading">Développeuse Web</h4>
                                             </div>
                                             <div class="timeline-body">
@@ -292,17 +362,65 @@
     <!-------- portfolio -------->
 
     <!-------- contact -------->
-    <div class="block">
-        <footer class="footer">
-            <div class="footer-contact-form">
+    <section id="contact">
+        <div class="container">
+            <div class="block">
+                <footer class="footer">
+                    <div class="title">
+                        <h2>CONTACT</h2>
+                    </div>
 
+                    <hr>
+
+                    <div class="footer-contact-form">
+                        <form>
+                            <div class="field">
+                                <label class="label">Nom</label>
+                                <div class="control">
+                                    <input id="lastname" class="input" type="text" placeholder="e.g Alex Smith" name="lastname">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Prénom</label>
+                                <div class="control">
+                                    <input id="firstname" class="input" type="text" placeholder="e.g Alex Smith" name="firstname">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input id="email" class="input" type="text" placeholder="e.g Alex Smith" name="email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea id="message" class="textarea" placeholder="e.g. Hello world" name="message"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="button is-link" id="send_email">Envoyer</button>
+                    </div>
+                    <div class="footer-informations">
+                        <p>54000 Nancy</p>
+                        <p>06 71 95 79 16</p>
+                        <p>celine.jacquet54@free.fr</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-github-square"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
             </div>
-            <div class="footer-informations">
-
-            </div>
-        </footer>
-    </div>
-
+        </div>
+    </section>
     <!-------- contact -------->
 
 
@@ -312,6 +430,8 @@
 
     <script src="src/js/pageScroll.js"></script>
     <script src="src/js/titleAnimate.js"></script>
+    <script src="src/js/modalContactezMoi.js"></script>
+    <script src="src/js/sent_mail.js"></script>
 
     <!----- script ----->
 
