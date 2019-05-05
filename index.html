@@ -36,12 +36,19 @@
 
 <body>
 
+    <!------ burger menu ------>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <!------ burger menu ------>
 
     <!----- header ----->
     <div class="block">
         <div id=home></div>
         <header class="header">
-            <a href="#home" class="header-logo">CELINEJACQUET.fr</a>
+            <a href="#home" class="header-logo" id="title_banner">CELINEJACQUET.fr</a>
             <nav class="header-menu">
                 <a onclick="myScrollTo('home')">ACCUEIL<a>
             <a onclick="myScrollTo('profil')">PROFIL<a>
@@ -73,9 +80,9 @@
 
                 <div class="banner-content">
                     <div class="type-js title">
-                        <h1 class="text-js title">CV Céline JACQUET</h1>
+                        <h1 class="text-js title" id="title_banner">CV Céline JACQUET</h1>
                     </div>
-                    <h2 class="subtitle">Conceptrice Développeuse d'applications</h2>
+                    <h2 class="subtitle" id="subtitle_banner">Conceptrice Développeuse d'applications</h2>
                     <button class="button is-link" id="open_modal">Contactez-moi</button>
                 </div>
             </div>

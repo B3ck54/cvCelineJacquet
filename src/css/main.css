@@ -88,3 +88,23 @@
 
 
 /***********/
+
+
+/***media queries***/
+
+@media screen and (max-width: 782px) {
+    #open_modal {
+        display: none;
+    }
+    #subtitle_banner {
+        color: white;
+        font-size: 20px;
+    }
+    #title_banner {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+/***********/
