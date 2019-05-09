@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     //close modal
-    $('#close_modal').dblclick(function() {
+    $('#close_modal').click(function() {
         $('#modal_to_open').css({
             'display': 'none'
         });
