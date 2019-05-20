@@ -14,5 +14,10 @@
     list-style-type: none;
 }
 
+.button_send_email {
+    text-align: center;
+    padding-top: 40px;
+}
+
 
 /***********/
