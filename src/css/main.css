@@ -117,8 +117,18 @@
     .header-logo {
         display: none
     }
-    .fa fa-download {
+    #download {
         display: none;
+    }
+    .header .header-menu a {
+        display: block;
+        text-align: center;
+        padding-left: 7px;
+        padding-right: 7px;
+        background-color: white;
+    }
+    .navbar-burger .burger {
+        background-color: white;
     }
 }
 
